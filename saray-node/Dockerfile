@@ -1,5 +1,5 @@
 FROM    ubuntu:xenial
-MAINTAINER Contactlab
+MAINTAINER Contactlab Product Team
 
 # Install Node.js and other dependencies
 RUN apt-get update && \
