@@ -1,0 +1,11 @@
+nginx:
+  build: ./nginx
+  links:
+    - node1:node1
+  ports:
+    - "6666:6666"
+node1:
+  build: ./saray-node
+  volumes:
+    - ./run.js:/src/run.js
+    - ./data/:/src/data
