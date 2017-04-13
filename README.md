@@ -35,7 +35,7 @@ exec("saray --port=3000 --path=/src/data --endpoint='yourApiEndPoint' --log /src
 
 The `data` folder with the stubbed APIs should be placed within the `root` directory of the project.  
 
-> NOTE: The `docker-compose.yml` can be modified and re-builded as you want.
+> NOTE: The `docker-compose.yml` can be modified and re-built as you want.
 
 # Run
 
