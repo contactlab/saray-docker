@@ -9,3 +9,4 @@ node1:
   volumes:
     - ./run.js:/src/run.js
     - ./data/:/src/data
+    - ./logs.log:/src/logs.log
