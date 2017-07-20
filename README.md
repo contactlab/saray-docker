@@ -26,7 +26,7 @@ The runner for PM2 and Saray should be like the follow and placed within the `ro
 
 const {exec} = require('child_process');
 
-exec('saray --port=3000 --path=/src/data --endpoint='yourApiEndPoint' --log /src/logs.log --pfer-api', (error, stdout, stderr) => {
+exec(`saray --port=3000 --path=/src/data --endpoint='yourApiEndPoint' --log /src/logs.log --pfer-api`, (error, stdout, stderr) => {
   console.log(error);
   console.log(stdout);
   console.log(stderr);
