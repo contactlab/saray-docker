@@ -19,13 +19,14 @@ Docker and [`docker-compose`](https://docs.docker.com/compose/install/) must be 
 
 # Required files/folder 
 
-The runner for PM2 and Saray should be like the follow and placed within the `root` directory of the project:
+The runner for PM2 and Saray should be like the follow and placed within the `root` directory of the project, called `run.js`:
 
+`run.js`
 ```js
 
 const {exec} = require('child_process');
 
-exec("saray --port=3000 --path=/src/data --endpoint='yourApiEndPoint' --log /src/loggin.log --pfer-api", (error, stdout, stderr) => {
+exec(`saray --port=3000 --path=/src/data --endpoint='yourApiEndPoint' --log /src/logs.log --pfer-api`, (error, stdout, stderr) => {
   console.log(error);
   console.log(stdout);
   console.log(stderr);
@@ -43,7 +44,7 @@ Simply run `docker-compose`:
 
     $ docker-compose up
 
-Now you can check your [localhost:6666](http://localhost:6666) and everything should be up and running!
+Now you can check your [localhost:3001](http://localhost:3001) and everything should be up and running!
 You can also add new stubs into the `data` folder.
 
 Run in `deamon` mode: 

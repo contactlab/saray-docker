@@ -3,9 +3,10 @@ nginx:
   links:
     - node1:node1
   ports:
-    - "6666:6666"
+    - "3001:3001"
 node1:
   build: ./saray-node
   volumes:
     - ./run.js:/src/run.js
     - ./data/:/src/data
+    - ./logs.log:/src/logs.log
