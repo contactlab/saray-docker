@@ -1,4 +1,4 @@
-# :warning: This project is no longer mantained
+:warning: **This project is no longer mantained**
 
 # [Saray](https://github.com/contactlab/saray) & Docker
 
